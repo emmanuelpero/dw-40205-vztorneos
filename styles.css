@@ -1,0 +1,279 @@
+/* colores: 
+
+primario: #FBFF12;
+Perla-textos: #DAEAEF
+ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:  no-repeat url(./img/background_img.png);
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* ___NAVEGACIÓN______ */
+
+.nav-container{
+    margin-left: 1.5rem;
+    margin-top: 1.5rem ;
+    display: inline-block;
+    position: relative;
+    z-index: 4002;
+    
+}
+
+.logo{
+    width: 55px;
+    height: 64px;
+    display: inline-block;
+}
+.logo:hover{
+    transform: translateY(-5px);
+    transition: all 400ms ease-in-out;
+    
+}
+.nav-container li{
+    position: relative;
+    display: inline-block;
+    padding-right: 1rem;
+    z-index: 1000;
+}
+.nav-container li a{
+    color: #DAEAEF;
+    font-weight: 400;
+    text-decoration: none;
+}
+.nav-container li a:hover{
+    color: #FBFF12;
+    transition: all 200ms ease-in;
+    transform: translateY();
+    font-weight: 600;
+}
+.main-nav{
+    display: inline-block;
+    position: relative;
+    right: -700px;
+    top: -25px;
+}
+
+
+/* ________MAIN___________ */
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.title-container{
+    margin-left: 5rem;
+    position: relative;
+    top: -8rem;
+    z-index: 5001;
+}
+.title-container h1{
+    margin-left: -1rem;
+    font-size: 5rem;
+    color: #FBFF12;
+    font-weight: 900;
+    font-style: italic;
+}
+.title-container span{
+    position: relative;
+    top:-.5rem;
+    font-size: 2rem;
+    color:#FBFF12;
+    margin-top:2rem;
+}
+.title-container p{
+    font-size: 1.2rem;
+    color:grey;
+    margin-top: 0.5rem;
+    letter-spacing: .05rem;
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 1.5rem;
+    border-radius: 2rem;
+    background-color: #FBFF12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family:  'Poppins', sans-serif;
+    letter-spacing: .04rem;  
+    color: #293241;  
+}
+    
+
+.btn:hover {
+    background-color: hsla(194, 40%, 90%, 0.347) ;
+    border: 3px solid #FBFF12;
+    transition: all 200ms ease-in-out;
+   
+}
+
+.btn a{
+}
+    
+.btn a:hover{
+ color: #FBFF12;
+ 
+}
+
+.hero-img {
+    width: 990px;
+    top: 0;
+    position: relative;
+    right: 12.7rem;
+    z-index: 3000;
+    transform: translateY(-5.8rem);
+   
+}
+
+
+
+/* _____ Multimedia_____ */
+
+.multimedia{
+    width: 900px;
+    height: 216px;
+    position: relative;
+    display: flex;
+    top: -44.5rem;
+    left: 5rem;
+    z-index: 4001;
+}
+
+.multimedia-items{
+    position: relative;
+}
+.multimedia_items img{
+    width: 300px;
+}
+.multimedia_items span{
+    display: flex;
+    position: relative;
+    transform: translateY(9rem);
+    left:20px ;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #DAEAEF;
+    text-transform: uppercase;
+}
+
+
+
+
+/* /footer/ */
+
+footer{
+    position: absolute;
+    background-color: #232b38;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    bottom: 0;
+    transform: translateY(9rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    text-transform:none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+footer a:hover{
+    color: #FBFF12;
+    transition: all 500ms ease-in-out ;
+}
+
+
+
+/* controles-laterales */
+
+.controles{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transform: translateY(-45rem);
+    height: 400px;
+    z-index: 5000;
+    
+}
+.botonera-redes{
+    transform: rotate(-90deg);
+    position: relative;
+    margin-left: -6rem;
+    
+}
+.botonera-redes ul{
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.botonera-redes a{
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform:lowercase;
+    font-style: italic;
+    color:#565858;
+    margin-right: .5rem;
+    letter-spacing: .1rem;
+    text-decoration: none;
+}
+
+.botonera-redes a:hover{
+    color: #DAEAEF;
+    transform: translateX(-.5rem);
+    transition: all 500ms ease-in-out;
+}
+.btn-g-r{
+    transform: rotate(-90deg);
+    position: relative;
+    margin-right: -1.4rem;
+    display: flex;
+    align-items: flex-end;
+    z-index: 5000;
+   
+}
+.btn-g-r img{
+    width: 40px;
+    margin-right: .5rem;
+    transform: rotate(90deg);
+}
+.btn-g-r img:hover{
+    width: 45px;
+    margin-right: .5rem;
+    transition: all 300ms ease-in-out;
+    
+}
+
