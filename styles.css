@@ -73,6 +73,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 700px;
     
 }
 .title-container{
@@ -96,10 +98,14 @@ body{
     margin-top:2rem;
 }
 .title-container p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color:grey;
     margin-top: 0.5rem;
     letter-spacing: .05rem;
+}
+.title-container h3{
+    color: #FBFF12;
+    font-size: 1.5rem;
 }
 
 .btn{
@@ -127,8 +133,7 @@ body{
    
 }
 
-.btn a{
-}
+
     
 .btn a:hover{
  color: #FBFF12;
@@ -140,8 +145,8 @@ body{
     top: 0;
     position: relative;
     right: 12.7rem;
-    z-index: 3000;
-    transform: translateY(-5.8rem);
+    z-index: 3;
+    transform: translateY(-4.3rem);
    
 }
 
@@ -154,9 +159,9 @@ body{
     height: 216px;
     position: relative;
     display: flex;
-    top: -44.5rem;
+    top: -41.5rem;
     left: 5rem;
-    z-index: 4001;
+    z-index: 4;
 }
 
 .multimedia-items{
@@ -164,6 +169,7 @@ body{
 }
 .multimedia_items img{
     width: 300px;
+    height: 172.219px;
 }
 .multimedia_items span{
     display: flex;
@@ -172,9 +178,132 @@ body{
     left:20px ;
     font-size: 2rem;
     font-weight: 800;
-    color: #DAEAEF;
+    color: #FBFF12;
     text-transform: uppercase;
 }
+
+/* ----TORNEOS-section----- */
+
+.torneo__container{
+    display: flex;
+    flex-direction: column;
+}
+.torneo__title{
+    position: relative;
+    top: 2rem;
+    text-align: center;
+}
+.torneo__title h1{
+    text-shadow: red 0 0, cyan 0 0;
+    transition: text-shadow 200ms;
+} 
+.torneo__title h1:hover{
+    text-shadow: red -6px 0, cyan 6px 0;
+}
+
+.torneos{
+    display: flex;
+    position: relative;
+    gap: .5rem;
+    transform: translateY(-5rem);
+    background-color: #FBFF12;
+ }
+
+
+
+.torneos__item {
+    background: no-repeat url(./img/torneos/torneo-f6.png);
+    background-size: cover;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    z-index: 0;
+}
+.torneos__item2 {
+    background:  no-repeat url(./img/torneos/torneo-f8-dom.png);
+    background-size: cover;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    filter: grayscale(100%);
+}
+
+
+
+
+.torneos__item3 {
+    background:  no-repeat  url(./img/torneos/torneo\ f8\ miercoles.png) ;
+    background-size: cover;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    filter: grayscale(100%);
+    
+}
+
+
+.torneos div:hover{
+    transform: translateY(-10rem);
+    transition: all 200ms ease-in;
+    filter: grayscale(0);
+    transform: scale(1.2,1.2);
+    position: relative;
+    z-index: 1;
+    filter: saturate(200%);
+    mix-blend-mode:normal;
+}
+
+
+
+
+/* ---- CAMPEONES-- SECTION----- */
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(86, 88, 88, .7);
+    width: 15rem;
+    height: 9rem;
+    border-radius: .8rem;
+}
+
+.card__info h4{
+    color:#DAEAEF;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.card__img__info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__info img{
+    width: 40px;
+}
+
+.card__info span{
+    color:#DAEAEF;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: .06rem;
+    line-height: 1.5rem;
+}
+.card__score{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.card__score span{
+    font-size: 1.3rem;
+    font-weight: 800;
+    
+}
+
+
 
 
 
