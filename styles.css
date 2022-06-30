@@ -13,20 +13,26 @@ Perla-textos: #DAEAEF
 }
 
 body{
-    background:  no-repeat url(./img/background_img.png);
-    background-size: cover;
-    object-fit: cover;
+    background: linear-gradient(145deg, rgba(41,51,65,1) 35%, rgba(63,89,81,1) 96%);
+    background-repeat:no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
+    
 }
+
+/* ___GRID--LAYUOT______ */
+
 
 
 /* ___NAVEGACIÓN______ */
 
 .nav-container{
+    width: 100%;
     margin-left: 1.5rem;
     margin-top: 1.5rem ;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     z-index: 4002;
     
@@ -60,10 +66,12 @@ body{
     font-weight: 600;
 }
 .main-nav{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     position: relative;
-    right: -700px;
-    top: -25px;
+    margin-right: 3rem;
+   
+    
 }
 
 
@@ -75,6 +83,7 @@ body{
     align-items: center;
     width: 100%;
     height: 700px;
+    grid-area: main-container;
     
 }
 .title-container{
@@ -141,16 +150,13 @@ body{
 }
 
 .hero-img {
-    width: 990px;
-    top: 0;
+    width: 900px;
     position: relative;
-    right: 12.7rem;
+    margin-right: 5rem;
     z-index: 3;
     transform: translateY(-4.3rem);
    
 }
-
-
 
 /* _____ Multimedia_____ */
 
@@ -159,7 +165,7 @@ body{
     height: 216px;
     position: relative;
     display: flex;
-    top: -41.5rem;
+    transform: translateY(-16rem);
     left: 5rem;
     z-index: 4;
 }
@@ -260,14 +266,39 @@ body{
 
 /* ---- CAMPEONES-- SECTION----- */
 
+
+.Campeones__grid{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 144px 144px 144px;
+    grid-gap: 1rem;
+    top:0;
+    transform: translate(21rem, 30rem);
+    
+}
+.card__campeon{
+    position: relative;
+    width: 15rem;
+    height: 9rem;
+    border-radius: .8rem;
+   
+}
+.card__img img{
+    position: relative;
+    height: 9rem ;
+    
+}
 .card__info{
     display: flex;
     flex-direction: column;
     position: relative;
     background-color: rgba(86, 88, 88, .7);
-    width: 15rem;
+    width: 245px;
     height: 9rem;
-    border-radius: .8rem;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
 }
 
 .card__info h4{
@@ -302,13 +333,18 @@ body{
     font-weight: 800;
     
 }
+.card__campeon:hover .card__info{
+    visibility: visible;
+    cursor: pointer;
 
+}
 
 
 
 
 
 /* /footer/ */
+
 
 footer{
     position: absolute;
@@ -317,13 +353,14 @@ footer{
     display: flex;
     height: 50px;
     bottom: 0;
-    transform: translateY(9rem);
+    transform: translateY(23rem);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 footer a{
+  
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -352,12 +389,14 @@ footer a:hover{
     transform: translateY(-45rem);
     height: 400px;
     z-index: 5000;
-    
 }
 .botonera-redes{
     transform: rotate(-90deg);
     position: relative;
-    margin-left: -6rem;
+    margin-left: rem;
+    grid-area: botonera-redes;
+    justify-content: flex-end;
+    z-index: 5000;
     
 }
 .botonera-redes ul{
@@ -386,18 +425,21 @@ footer a:hover{
     transition: all 500ms ease-in-out;
 }
 .btn-g-r{
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     position: relative;
-    margin-right: -1.4rem;
+    
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-end;
     z-index: 5000;
-   
+    grid-area:btn-g-r;
+    transform: translateY(-15rem);
+    
 }
 .btn-g-r img{
     width: 40px;
     margin-right: .5rem;
-    transform: rotate(90deg);
 }
 .btn-g-r img:hover{
     width: 45px;
@@ -406,3 +448,73 @@ footer a:hover{
     
 }
 
+
+
+
+/* ----------------------------Medias Quiery---------------------- */
+/* 
+
+@media screen and (max-width: 500px){
+   body{
+    background: none;
+    background-color: #293241;
+   }
+
+   header{
+    background-color: #232b38;
+    width: 100vw;
+    height: 200px;
+   }
+   .nav-container{
+    margin: 0;
+    margin-left: -1rem;
+    padding: 2rem;
+    width:500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .main-nav {
+    font-size: rem;
+   }
+   
+   .grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .main{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .title-container-2{
+    margin: 0;
+    transform: translateY(5rem);
+   }
+   .main .title-container-2 h1{
+    margin: 0;
+    font-size: 3rem;
+
+   }
+   
+   .hero-img{
+    width: 600px;
+    margin: 0;
+    transform: translateY(6rem);
+   }
+   .multimedia{
+    display: none;
+    width: 500px;
+   }
+   .botonera{
+    display: none;
+   }
+   .btn-grid{
+    display: none;
+   }
+
+} */
