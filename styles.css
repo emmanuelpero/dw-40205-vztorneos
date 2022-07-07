@@ -73,6 +73,36 @@ body{
     
 }
 
+/* -----nav-bar con bootstrap------ */
+
+.bg-light{
+    background-color: transparent;
+}
+.navbar-brand{
+    margin-left:1.5rem;
+    width: 55px;
+    height: 64px;
+    display: inline-block;
+}
+.navbar-brand:hover{
+    transform: translateY(-5px);
+    transition: all 400ms ease-in-out;
+}
+.navbar-nav{
+    transform: translateX(43rem);
+}
+.navbar-light 
+.navbar-nav 
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    color: #DAEAEF;
+    font-size: 1.1rem;
+}
+.navbar-light 
+.navbar-nav 
+.nav-link:hover{
+    color:#FBFF12;
+}
 
 /* ________MAIN___________ */
 
@@ -188,14 +218,15 @@ body{
 
 /* ----TORNEOS-html----- */
 
-.torneo__container{
-    display: flex;
-    flex-direction: column;
-}
+
 .torneo__title{
     position: relative;
-    top: 2rem;
+    top: 1rem;
     text-align: center;
+    width: 450px;
+    transform: translateX(24rem);
+    top:-9rem;
+
 }
 .torneo__title h1{
     text-shadow: red 0 0, cyan 0 0;
@@ -209,10 +240,11 @@ body{
     display: flex;
     position: relative;
     gap: .5rem;
-    transform: translateY(-5rem);
     background-color: #FBFF12;
- }
-
+    width: 900px;
+    transform: translateY(-15rem);
+    margin-left: 13rem;
+}
 
 
 .torneos__item {
@@ -373,6 +405,57 @@ body{
     text-shadow: red -6px 0, cyan 6px 0;
 }
 
+.hero-container{
+    width: 1000px;
+    overflow: hidden;
+}
+.hero-container img{
+    width: 1000px;
+    margin-bottom: -10rem;
+   
+}
+.icon-equipo{
+    text-align: start;
+}
+
+.icon-table{
+    width: 25px;
+    height: 25px;
+    margin-right: .4rem;
+}
+.torneos-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    margin-top: -7rem;
+}
+
+.container-table{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    
+}
+.container-medallero{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    align-items: center;
+}
+.container-medallero h4{
+    color: #FBFF12;
+    font-weight: 600;
+    background-color: #232b38;
+    width: 400px;
+    text-align: center;
+}
+
+table td{
+    text-align: center;
+}
+
 
 
 
@@ -403,6 +486,7 @@ footer a{
     font-style: normal;
     font-weight: 400;
     font-size: .8rem;
+    z-index: 0;
 }
 
 footer a:hover{
@@ -455,7 +539,7 @@ footer a:hover{
     align-items: flex-end;
     justify-content: flex-end;
     z-index: 5000;
-    transform: translate(-5rem);
+    transform: translate(-.5rem);
     position: fixed;
 }
 .btn-g-r img{
