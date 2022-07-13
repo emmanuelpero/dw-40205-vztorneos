@@ -35,18 +35,7 @@ body{
     z-index: 4002;
 }
 
-.logo{
-    margin-left:1.5rem;
-    width: 55px;
-    height: 64px;
-    display: inline-block;
-}
 
-
-.logo:hover{
-    transform: translateY(-5px);
-    transition: all 400ms ease-in-out;
-}
 .nav-container li{
     position: relative;
     display: inline-block;
@@ -103,6 +92,19 @@ body{
 .nav-link:hover{
     color:#FBFF12;
 }
+.logo{
+    margin-left:1.5rem;
+    width: 55px;
+    height: 64px;
+    display: inline-block;
+}
+
+
+.logo:hover{
+    transform: translateY(-2px);
+    transition: all 400ms ease-in-out;
+}
+
 
 
 @media screen and (max-width: 768px){
@@ -217,7 +219,7 @@ body{
     width: 900px;
     position: relative;
     z-index: 3;
-    transform: translateX(-4rem);
+    transform: translateX(-7rem);
     margin-bottom: 6rem;
 }
 
@@ -367,11 +369,11 @@ body{
     width: 15rem;
     height: 9rem;
     border-radius: .8rem;
-   
 }
 .card__img img{
     position: relative;
     height: 9rem ;
+    width: 245px;
     
 }
 .card__info{
@@ -511,7 +513,6 @@ footer{
 }
 
 footer a{
-  
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -523,13 +524,11 @@ footer a{
     font-size: .8rem;
     z-index: 0;
 }
-
+/* no fucioa el hover en le footer */
 footer a:hover{
     color: #FBFF12;
     transition: all 500ms ease-in-out ;
 }
-
-
 
 /* controles-laterales */
 
@@ -540,7 +539,7 @@ footer a:hover{
     position: fixed;
     margin-left: -6rem;
     justify-content: flex-end;
-    z-index: 5000;
+    z-index: 6;
 }
 .botonera-redes ul{
     position: relative;
@@ -560,6 +559,7 @@ footer a:hover{
     margin-right: .5rem;
     letter-spacing: .1rem;
     text-decoration: none;
+    
 }
 
 .botonera-redes a:hover{
@@ -569,92 +569,99 @@ footer a:hover{
 }
 .btn-g-r{
     width: 100%;
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    z-index: 5000;
+    z-index: 5;
     transform: translate(-.5rem);
     position: fixed;
-}
+} 
+ /* Pasar a svg los iconos de la botonera */
 .btn-g-r img{
     width: 40px;
     margin-right: .5rem;
+    margin-top: .5rem;
+    opacity: .6;
 }
 .btn-g-r img:hover{
     width: 45px;
-    margin-right: .5rem;
+    opacity: 1;
     transition: all 300ms ease-in-out;
-    
+    box-shadow: 2px 0px 24px -2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 2px 0px 34px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 0px 34px -2px rgba(0,0,0,0.5);
 }
 
 
 
 
 /* ----------------------------Medias Quiery---------------------- */
-/* 
+
 
 @media screen and (max-width: 500px){
    body{
     background: none;
     background-color: #293241;
    }
-
-   header{
-    background-color: #232b38;
-    width: 100vw;
-    height: 200px;
-   }
-   .nav-container{
-    margin: 0;
-    margin-left: -1rem;
-    padding: 2rem;
-    width:500px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
-   .main-nav {
-    font-size: rem;
-   }
    
-   .grid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   /* --------------------------index.hmtl */
+   .container-fliud {
+    z-index: 6;
    }
-   .main{
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   .title-container{
+    transform: translateX(4rem);
+    z-index: 1;
    }
-   .title-container-2{
-    margin: 0;
-    transform: translateY(5rem);
+   .title-container h1{
+    font-size: 4rem;
    }
-   .main .title-container-2 h1{
-    margin: 0;
-    font-size: 3rem;
-
-   }
-   
    .hero-img{
-    width: 600px;
-    margin: 0;
-    transform: translateY(6rem);
+    /* display: none; */
+    width: 500px;
+    transform: translateX(0);
+    position: absolute;
+    transform: translateY(12.8rem);
+    
    }
+
    .multimedia{
     display: none;
-    width: 500px;
    }
-   .botonera{
-    display: none;
+   footer_inicio{
+    position: relative;
+    transform: translateY(-20rem);
    }
-   .btn-grid{
-    display: none;
+/* ------------------------------------torneos.html */
+    .title-top{
+        top: -11rem;
+    }
+    .torneo__title {
+        width: 400px;
+    }
+   .torneos{
+    flex-direction: column;
+    margin-top: -8rem;
+    margin-left: 7rem;
+    width: 300px;
+    gap: .8rem;
    }
 
-} */
+   /* ----------------------------------campeones.html */
+   .Campeones__grid{
+    grid-template-columns: 189px 180px;
+    transform: translate(1rem, 30rem);
+    gap: 3rem;
+    margin-left: -.5rem;
+   }
+    .card__img img{
+    width: 10px;
+   }
+   
+   
+   .footer_campeones{
+    position: relative;
+    margin-top: 22rem;
+   }
+  
+}
