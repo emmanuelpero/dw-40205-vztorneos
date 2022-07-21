@@ -12,6 +12,18 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.title-text h2 {
+  font-size: 1.2rem;
+}
+
+.title-text h4 {
+  font-size: 0.9rem;
+}
+
+.title-text span {
+  font-size: 0.5rem;
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +74,7 @@ body {
   color: #FBFF12;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
-  border-bottom: .2rem solid #FBFF12;
+  border-bottom: 0.2rem solid #FBFF12;
 }
 
 .controles {
@@ -130,6 +142,7 @@ body {
 
 .title-container h1 {
   font-size: 4rem;
+  font-weight: 800;
   color: #FBFF12;
   margin-bottom: -1rem;
   text-shadow: red 0 0, cyan 0 0;
@@ -168,9 +181,8 @@ body {
   margin-right: 1rem;
 }
 
-.sedes-item .item h4 {
+.sedes-item .item h2 {
   color: #FBFF12;
-  font-size: 1.2rem;
   background-color: #232b38;
   text-align: center;
 }
@@ -218,7 +230,7 @@ body {
   margin-top: 2rem;
 }
 
-.sedes-item .info-item .info-text div a {
+.sedes-item .info-item .info-text div .boton-redes, .sedes-item .info-item .info-text div .boton-ig {
   position: relative;
   text-decoration: none;
   color: #232b38;
@@ -230,12 +242,17 @@ body {
   letter-spacing: 2px;
 }
 
-.sedes-item .info-item .info-text div a:hover {
+.sedes-item .info-item .info-text div .boton-redes:hover, .sedes-item .info-item .info-text div .boton-ig:hover {
   color: #232b38;
   background-color: #fbff1260;
   border: 1px solid #FBFF12;
   -webkit-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
+}
+
+.sedes-item .info-item .info-text div .boton-ig {
+  background-color: #232b38;
+  color: #FBFF12;
 }
 
 footer {

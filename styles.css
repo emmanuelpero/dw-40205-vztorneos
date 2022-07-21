@@ -16,53 +16,11 @@ body{
     background: linear-gradient(145deg, rgba(41,51,65,1) 35%, rgba(63,89,81,1) 96%);
     background-repeat:no-repeat;
     width: 100%;
-    height: 70vw;
-}
-
-/* ___GRID--LAYUOT______ */
-
-
-
-/* ___NAVEGACIÓN______ */
-
-/* .nav-container{
-    width: 100%;
-    margin-top: 1.5rem ;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 4002;
+    height: auto;
 }
 
 
-.nav-container li{
-    position: relative;
-    display: inline-block;
-    padding-right: 1rem;
-    z-index: 1000;
-}
-.nav-container li a{
-    color: #DAEAEF;
-    font-weight: 400;
-    text-decoration: none;
-}
-.nav-container li a:hover{
-    color: #FBFF12;
-    transition: all 200ms ease-in;
-    transform: translateY();
-    font-weight: 600;
-}
-.main-nav{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-right: 3rem;
-   
-    
-} */
-
-/* -----nav-bar con bootstrap------ */
+/* -------------------------------------------------/-----nav-bar con bootstrap------ */
 
 .bg-light{
     background-color: transparent;
@@ -99,9 +57,8 @@ body{
     display: inline-block;
 }
 
-
 .logo:hover{
-    transform: translateY(-2px);
+    transform: scale(1.1);
     transition: all 400ms ease-in-out;
 }
 
@@ -141,7 +98,7 @@ body{
     }
 }
 
-/* ________MAIN___________ */
+/* ---------------------------________MAIN___________ */
 
 .main-container{
     display: flex;
@@ -253,7 +210,7 @@ body{
     text-transform: uppercase;
 }
 
-/* ----TORNEOS-html----- */
+/*---------------------------------------------------------- ----TORNEOS-html----- */
 
 
 .torneo__title{
@@ -331,7 +288,7 @@ body{
 
 
 
-/* ---- CAMPEONES-- SECTION----- */
+/* ------------------------------------------------------------------- CAMPEONES-- SECTION----- */
 
 
 .title-campeones h1{
@@ -430,7 +387,7 @@ body{
 
 
 
-/* /-Medalleros-/ */
+/* ---------------------------------------------------------------/-Medalleros-/ */
 
 .title-efecto h1{
     text-shadow: red 0 0, cyan 0 0;
@@ -493,23 +450,200 @@ table td{
     text-align: center;
 }
 
+/* ----------------------------------------------------------------------Contacto.html */
+
+.form{
+    position: relative;
+    width: 60%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(15rem, -16rem);
+    box-shadow: 1px 5px 10px 2px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 5px 10px 2px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 5px 10px 2px rgba(0,0,0,0.49);
+    z-index: 11;
+   
+
+}
+
+.form-img{
+   
+    background:  url(/img/estadio-lleno-2.png) ;
+    width: 45%;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 
+}
+.form-img .form-img-container{
+    height: 500px;
+}
+.form-logo{
+    width: 55px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5rem;
+}
 
-/* /footer/ */
+.form-img h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #232b38;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: -.1rem;
+    transform: translateY(1rem);
+    text-shadow: 1px 3px 3px rgba(255,255,255,0.6);
+}
+.form-img h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #232b38;
+    transform: translateY(1rem);
+    text-shadow: 1px 3px 3px rgba(255,255,255,0.6);
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2rem;
+    
+}
+.red{
+    font-size: .8rem;
+    width: 30px;
+    height: 30px;
+    background-color: #FBFF12;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1 solid white;
+    box-shadow: 1px 5px 10px 2px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 5px 10px 2px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 5px 10px 2px rgba(0,0,0,0.49);
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+}
+.red:hover{
+    background-color: #232b38;
+    color: white;
+}
+.form-container{
+    background-color: #FBFF12;
+    width: 55%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-container .form-content{
+    display: flex;
+    flex-direction: column;
+    padding: .3rem;
+}
+.form-container h2{
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.form-container label{
+    font-size: 1rem;
+    color: #666806;
+    font-style: italic;
+}
+.form-container input, select{ 
+    background-color: #FBFF12;
+    border:none;
+    border-bottom: 1px solid #232b38;
+}
+.form-container input::placeholder{
+    font-size:.6rem;
+    color: #aeb10a;
+}
+.form-container select, option{
+    font-size: .8rem;
+    color: #aeb10a;
+}
+
+.form-container textarea{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #FBFF12;
+    border: 1px solid #232b38;
+    height: 30%;
+}
+.form-container textarea::placeholder{
+    font-size: .6rem;
+    padding: .3rem;
+    color: #232b38;
+}
+
+.form-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:1rem;
+    transform: translateY(-3rem);
+}
+
+.form-btn button{
+    width:120px ;
+    height: 30px;
+    border-radius:20px;
+    background-color: #232b38;
+    color: #FBFF12;
+    transition: all 400ms ease-in-out;
+    border: none;
+    box-shadow: 1px 5px 10px 2px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 5px 10px 2px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 5px 10px 2px rgba(0,0,0,0.49);
+}
+.form-btn button:nth-child(2){
+    background-color: #FBFF12;
+    color: #232b38;
+    border: 1px solid white;
+}
+.form-btn button:nth-child(2):hover{
+    background-color: #232b38;
+    color: #FBFF12;
+    border: none;
+}
+.form-btn button:hover{
+    background-color: #FBFF12;
+    border: 1px solid white;
+    color:#232b38;
+}
+
+
+/* ----------------------------------------------/footer/ */
 
 
 footer{
-    position: absolute;
     background-color: #232b38;
     width: 100%;
     display: flex;
     height: 50px;
-    bottom: 0;
-    transform: translateY(20rem);
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 footer a{
@@ -530,7 +664,7 @@ footer a:hover{
     transition: all 500ms ease-in-out ;
 }
 
-/* controles-laterales */
+/* -------------------------------------------------controles-laterales */
 
 
 .botonera-redes{
@@ -596,7 +730,7 @@ footer a:hover{
 
 
 
-/* ----------------------------Medias Quiery---------------------- */
+/* -------------------------------------------------------------Medias Quiery---------------------- */
 
 
 @media screen and (max-width: 500px){

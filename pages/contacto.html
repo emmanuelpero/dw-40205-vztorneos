@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Medalleros, campeones, Torneos, Fotos, Jugadores, Equipos, Contacto, Inscripción">
+    <meta name="description" content="LLena el formulario de contacto y te llega toda la info de los tornoes, dejanos tu número celular y te mandamos la info al tu celular.. ¡Anotate ya!">
     <!-- ----Favicon------- -->
     <link rel="shortcut icon" href="../img/logo vz color.png" type="image/x-icon">
     <!-- ----Fonts------- -->
@@ -83,26 +85,49 @@
         </div>
     </main>
     <!-- ----Formulario de contacto------- -->
-    <div class="form-container">
+    <div class="form">
+
+      <div class="form-img">
+          <img class="form-logo" src="../img/logo vz color.png" alt="">
+          <div>
+            <h2>¡Anotate ya!</h2>
+            <h4>Animate a competir.</h4>
+            <div class="redes">
+                <div class="red">I</div>
+                <div class="red">F</div>
+                <div class="red">W</div>
+            </div>
+          </div>
+      </div>
+
+      <div class="form-container">
+        <h2>Contactanos</h2>
         <form action="">
+          <div class="form-content">
             <label for="nombre-apellido">Nombre y Apellido</label>
             <input type="text" name="nombre-apellido" placeholder="ingresa tu nombre..." required>
+          </div>
+          <div class="form-content">
             <label for="teléfono">Teléfono de contacto</label>
             <input type="tel" name="teléfono" placeholder="ingresa tu número..." required>
+          </div>
             <!-- Ingresar para seleccionar torneo. -->
+          <div class="form-content">
             <label for="torneo">Elegí el torneo</label>
-            
             <select name="torneo" id="" required>
                 <option value="torneo-f6-s">Torneo F6 Sábados</option>
                 <option value="torneo-f8-d">Torneo F8 Domingos</option>
                 <option value="tornoe-f8-m">Torneo F8 Miercoles</option>
             </select>
-            <textarea name="mensaje" id="" cols="50" rows="10" placeholder="Ingresa el mensaje"></textarea>
-
-            <input type="submit" name="" id="" required>
-            <input type="reset" name="" id="" required>
-
+          </div>  
+            <textarea name="mensaje" id="" cols="35" rows="8" placeholder="Ingresa el mensaje..."></textarea>
+         
         </form>
+        <div class="form-btn">
+          <button type="submit" >enviar</button>
+          <button type="reset" >restablecer</button>
+        </div>
+      </div>
     </div>
 
     <footer>
