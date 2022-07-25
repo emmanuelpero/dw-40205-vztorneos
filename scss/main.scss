@@ -17,11 +17,7 @@ $title-text: (
     span: .5rem,
 );
 
-// @each $red, $color in $redes {
-//     .btn--#{$red} {
-//         background-color: $color;
-//     }
-//  }
+
  
 
 @each $text, $valor in $title-text{
