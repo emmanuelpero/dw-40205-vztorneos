@@ -26,7 +26,7 @@ body::before{
     opacity: .03;
     position: absolute;
     transform: translateY(-.9rem);
-    overflow: hidden;
+    
 }
 
 
@@ -322,13 +322,13 @@ body::before{
 }
 
 .Campeones__grid{
-    position: absolute;
+    position: relative;
     display: grid;
     grid-template-columns: 250px 250px 250px;
     grid-template-rows: 144px 144px 144px;
     grid-gap: 1rem;
     top:0;
-    transform: translate(21rem, 30rem);
+    transform: translate(21rem, -20rem);
     
 }
 .card__campeon{
@@ -644,6 +644,7 @@ table td{
 /*-------------------------------------------------/galeria/ */
 
 .grid-container{
+    
     background-color: #FBFF12;
     width: 90%;
     transform: translate(4rem, -18rem);
@@ -653,6 +654,7 @@ table td{
     z-index: 11;
 }
 .grid-galeria{
+   
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -662,6 +664,27 @@ table td{
 }
 .grid-logo{
     width: 160px;
+}
+.item-hover{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-hover-team{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-hover-v{
+    position: relative;
+    width: 300px;
+    height: 600px;
 }
 .grid-item-1{
     grid-column: 1/2;
@@ -698,8 +721,82 @@ table td{
 
 .grid-item-hover{
     display: none;
+    transition: all 4ms ease-in-out;
+    background-color: #56585896;
+    
+}
+.grid-item-hover h3{
+    color: #cddee4;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
+.item-hover:hover .grid-item-hover{
+    visibility: visible;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-hover-team:hover .grid-item-hover{
+    visibility: visible;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-hover-v:hover .grid-item-hover{
+    visibility: visible;
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item-hover div{
+    position: relative;
+    display: flex;
+    margin-top: 1rem;
+   
+
+}
+.grid-item-hover i{
+    margin: 1rem;
+   
+}
+.grid-item-hover a{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FBFF12;
+}
+.grid-item-hover a:hover{
+    color: #FBFF12;
+    background-color: #232b38;
+
+}
 /* --------------------------------------------------/Reglamento/ */
 
 .regla-f8{
@@ -710,7 +807,7 @@ table td{
     transform: translate(-18rem, 9rem);
     z-index: 6;
     padding: 1rem;
-    overflow: hidden;
+    overflow: auto;
     border: 1px solid #FBFF12;
     border-radius: 10px;
     box-shadow: 2px 0px 24px -2px rgba(0,0,0,0.5);
@@ -775,7 +872,7 @@ footer a:hover{
     position: fixed;
     margin-left: -6rem;
     justify-content: flex-end;
-    z-index: 6;
+    z-index: 1;
 }
 .botonera-redes ul{
     position: relative;
@@ -804,13 +901,13 @@ footer a:hover{
     transition: all 500ms ease-in-out;
 }
 .btn-g-r{
-    width: 100%;
+    width: 40px;
     display:flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
     z-index: 5;
-    transform: translate(-.5rem);
+    transform: translateX(78rem);
     position: fixed;
 } 
  /* Pasar a svg los iconos de la botonera */
@@ -886,7 +983,7 @@ footer a:hover{
    /* ----------------------------------campeones.html */
    .Campeones__grid{
     grid-template-columns: 189px 180px;
-    transform: translate(1rem, 30rem);
+    transform: translate(1rem, -20rem);
     gap: 3rem;
     margin-left: -.5rem;
    }
@@ -906,7 +1003,7 @@ footer a:hover{
     display: none;
    }
    body{
-    overflow: hidden;
+    overflow: auto;
    }
    body::before{
     font-size: 5rem;
